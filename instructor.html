@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+
+<!--Remy Sharp Shim -->
+<!--[if lte IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js" >
+</script>
+<![endif]-->
+
+
+
+
+<link href="css/font-awesome.min.css" type="text/css" rel="stylesheet">
+
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+
+<link href="css/style-acordian.css" type="text/css" rel="stylesheet">
+
+<link href="css/styles.css" type="text/css" rel="stylesheet">
+
+<!-- Modernizr -->
+<script src="js/modernizr.js"></script>
+
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+
+<script src="js/drop-down.js" type="text/javascript"> </script>
+
+<script src="js/script.js"></script>
+
+<!-- FlexSlider -->
+<script src="js/jquery.flexslider.js"></script>
+
+<script type="text/javascript">
+	$(function(){
+		SyntaxHighlighter.all();
+	});
+	$(window).load(function(){
+		$('.flexslider').flexslider({
+			animation: "slide",
+			start: function(slider){
+				$('body').removeClass('loading');
+			}
+		});
+	});
+</script>
+
+
+<!-- doctype end-->
+
+
+
+<title>instructor</title>
+</head>
+<body>
+<header>
+  <img id="logo" src="images/logo.png" alt="logo">
+
+
+
+</header>
+
+
+
+<div id="wrapper">
+  <!-- nav php begin  ADD 1ST LINE FROM HW4 NAV-->
+  <nav>
+
+  <ul class="nav">
+      <li>
+      <a href="#">
+      HOME
+      </a>
+      </li>
+
+      <li class="button-dropdown">
+      <a href="javascript:void(0)" class="dropdown-toggle">
+    ABOUT<span>▼</span>
+      </a>
+
+  <ul class="dropdown-menu">
+  <li>
+  <a href="about.php">
+  ABOUT
+  </a>
+  </li>
+
+  <li>
+  <a href="instructor.php">
+  INSTRUCTOR
+  </a>
+  </li>
+
+  </ul>
+  </li>
+
+
+
+  <li class="button-dropdown">
+  <a href="javascript:void(0)" class="dropdown-toggle">
+  SERVICES <span>▼</span>
+  </a>
+
+  <ul class="dropdown-menu">
+  <li>
+  <a href="event.php">
+  EVENT CHOREOGRAPHY
+  </a>
+  </li>
+
+  <li>
+  <a href="team-building.php">
+  TEAM BUILDING EXERCISES
+  </a>
+  </li>
+
+  </ul>
+  </li>
+
+	<li>
+  <a href="calendar.php">
+  CLASSES
+  </a>
+  </li>
+
+  <li>
+  <a href="calendar.php">
+  CALENDAR
+  </a>
+  </li>
+
+
+  <li class="button-dropdown nav-last">
+  <a href="javascript:void(0)" class="dropdown-toggle">
+  CONTACT <span>▼</span>
+  </a>
+
+  <ul class="dropdown-menu">
+  <li>
+  <a href="contact.php">
+  CONTACT
+  </a>
+  </li>
+
+  <li>
+  <a href="faq.php">
+  FAQ
+  </a>
+  </li>
+
+  </ul>
+  </li>
+
+  </ul>
+  </nav>
+
+  <!-- nav ends-->
+
+
+<h1 class="heading">Instructors</h1>
+
+<div id="box-neil">
+<h2>Meet Neil</h2>
+<!--<img class="instructor" src="images/neil.jpg" alt="instructor-image">-->
+<img class="instructor" src="images/neil1.jpg" alt="instructor-image">
+<p>Neil D’souza is a professional dancer himself and has over 12 years of experience teaching dance under his belt.He is an expert of ballroom dances like swing, salsa, charleston, lindy-hop and balboa.He teaches both beginners and professional dancers. His classes are carefully tailored according to the crowd at hand and are interactive and playful.</p>
+
+</div> <!--end box-neil-->
+
+
+<div id="box-stacy">
+	<h2>Meet Stacy</h2>
+	<!--<img class="instructor" src="images/stacy.jpg" alt="instructor-image">-->
+		<img class="instructor" src="images/stacy1.jpg" alt="instructor-image">
+	<p>Stacy is an approachable and committed Dance Teacher who is keen to share her passion for dance with those that she teaches.She likes to create a classroom atmosphere where visitors are welcome and peer observation is the norm.She gives personal attention to all her clients and is always there to guide them in going forward.</p>
+
+
+
+
+</div> <!--end stacy-->
+
+
+
+
+
+
+
+
+
+</div> <!-- end wrapper-->
+
+
+<!-- footer php starts-->
+
+<footer>
+
+<div id="footer-inner">
+<div id="footerbox1">
+	<h3>Stay Connected</h3>
+<div id="footer-social">
+<i class="fa fa-facebook-official fa-lg"></i>
+<i class="fa fa-twitter-square fa-lg"></i>
+<i class="fa fa-instagram fa-lg"></i>
+</div> <!--end footer-social-->
+
+</div>  <!--end footerbox1-->
+
+<div id="footerbox2">
+<h3>Class Schedule</h3>
+<a class="link" href="calendar.php">Calendar</a>
+<a class="link" href="group-class.php">Dance Class</a>
+<a class="link" href="calendar.php">Dance Social</a>
+
+</div> <!-- close footerbox2-->
+
+<div id="footerbox3">
+<h3>Email updates</h3>
+<p>Be the first to know about our offers and announcements</p>
+
+<form action="formhandler.php" method="post">
+
+	<input type="email" name="Email"  placeholder="Email">
+		</form>
+
+
+</div> <!-- close footerbox3-->
+
+
+
+</div> <!-- close footer inner-->
+
+<div id="copyright">
+<ul>
+<li> &copy; Copyright_2016 </li>
+<li>All Rights Reserved </li>
+<li> <a href="../index.html"> Web Design by Manitasha </a> </li>
+</ul>
+</div> <!-- end copyright-->
+
+</footer>
+<!-- footer php ends-->
+
+</body>
+</html>

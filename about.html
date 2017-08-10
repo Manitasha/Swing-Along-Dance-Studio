@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+
+<!--Remy Sharp Shim -->
+<!--[if lte IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js" >
+</script>
+<![endif]-->
+
+
+
+
+<link href="css/font-awesome.min.css" type="text/css" rel="stylesheet">
+
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+
+<link href="css/style-acordian.css" type="text/css" rel="stylesheet">
+
+<link href="css/styles.css" type="text/css" rel="stylesheet">
+
+<!-- Modernizr -->
+<script src="js/modernizr.js"></script>
+
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+
+<script src="js/drop-down.js" type="text/javascript"> </script>
+
+<script src="js/script.js"></script>
+
+<!-- FlexSlider -->
+<script src="js/jquery.flexslider.js"></script>
+
+<script type="text/javascript">
+	$(function(){
+		SyntaxHighlighter.all();
+	});
+	$(window).load(function(){
+		$('.flexslider').flexslider({
+			animation: "slide",
+			start: function(slider){
+				$('body').removeClass('loading');
+			}
+		});
+	});
+</script>
+
+
+<!-- doctype end-->
+
+
+
+<title>about</title>
+</head>
+<body>
+<header>
+  <img id="logo" src="images/logo.png" alt="logo">
+
+
+</header>
+
+
+
+<div id="wrapper">
+  <!-- nav php begin  ADD 1ST LINE FROM HW4 NAV-->
+  <nav>
+
+  <ul class="nav">
+      <li>
+      <a href="#">
+      HOME
+      </a>
+      </li>
+
+      <li class="button-dropdown">
+      <a href="javascript:void(0)" class="dropdown-toggle">
+    ABOUT<span>▼</span>
+      </a>
+
+  <ul class="dropdown-menu">
+  <li>
+  <a href="about.php">
+  ABOUT
+  </a>
+  </li>
+
+  <li>
+  <a href="instructor.php">
+  INSTRUCTOR
+  </a>
+  </li>
+
+  </ul>
+  </li>
+
+
+
+  <li class="button-dropdown">
+  <a href="javascript:void(0)" class="dropdown-toggle">
+  SERVICES <span>▼</span>
+  </a>
+
+  <ul class="dropdown-menu">
+  <li>
+  <a href="event.php">
+  EVENT CHOREOGRAPHY
+  </a>
+  </li>
+
+  <li>
+  <a href="team-building.php">
+  TEAM BUILDING EXERCISES
+  </a>
+  </li>
+
+  </ul>
+  </li>
+
+	<li>
+  <a href="calendar.php">
+  CLASSES
+  </a>
+  </li>
+
+  <li>
+  <a href="calendar.php">
+  CALENDAR
+  </a>
+  </li>
+
+
+  <li class="button-dropdown nav-last">
+  <a href="javascript:void(0)" class="dropdown-toggle">
+  CONTACT <span>▼</span>
+  </a>
+
+  <ul class="dropdown-menu">
+  <li>
+  <a href="contact.php">
+  CONTACT
+  </a>
+  </li>
+
+  <li>
+  <a href="faq.php">
+  FAQ
+  </a>
+  </li>
+
+  </ul>
+  </li>
+
+  </ul>
+  </nav>
+
+  <!-- nav ends-->
+
+
+<h1 class="heading">About Us</h1>
+<aside>
+<img id="about-image" src="images/swing-dance.jpg" alt="dance-image">
+</aside>
+
+<main>
+
+<h2>Who we are</h2>
+<p>Swing Along Dance Studio is a one stop studio based in Seattle for all your dance needs.We take private and group dance classes, hosts dance socials and provide event choreography.Through dance we aim to build self esteem, confidence and discipline while promoting teamwork and creativity .
+	  </p>
+
+<h2>what we do</h2>
+<p>Swing Along Dance studio provides private and group classes for east coast swing, west coast swing, balboa, charleston, lindy-hop and other ballroom dances.We provide training to dancers at all levels - beginners, intermediate and professional. </p>
+
+</main>
+
+
+
+
+
+
+
+</div> <!-- end wrapper-->
+
+
+<!-- footer php starts-->
+
+<footer>
+
+<div id="footer-inner">
+<div id="footerbox1">
+	<h3>Stay Connected</h3>
+<div id="footer-social">
+<i class="fa fa-facebook-official fa-lg"></i>
+<i class="fa fa-twitter-square fa-lg"></i>
+<i class="fa fa-instagram fa-lg"></i>
+</div> <!--end footer-social-->
+
+</div>  <!--end footerbox1-->
+
+<div id="footerbox2">
+<h3>Class Schedule</h3>
+<a class="link" href="calendar.php">Calendar</a>
+<a class="link" href="group-class.php">Dance Class</a>
+<a class="link" href="calendar.php">Dance Social</a>
+
+</div> <!-- close footerbox2-->
+
+<div id="footerbox3">
+<h3>Email updates</h3>
+<p>Be the first to know about our offers and announcements</p>
+
+<form action="formhandler.php" method="post">
+
+	<input type="email" name="Email"  placeholder="Email">
+		</form>
+
+
+</div> <!-- close footerbox3-->
+
+
+
+</div> <!-- close footer inner-->
+
+<div id="copyright">
+<ul>
+<li> &copy; Copyright_2016 </li>
+<li>All Rights Reserved </li>
+<li> <a href="../index.html"> Web Design by Manitasha </a> </li>
+</ul>
+</div> <!-- end copyright-->
+
+</footer>
+<!-- footer php ends-->
+</body>
+</html>
